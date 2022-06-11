@@ -13,7 +13,7 @@ for y in lis:
         for line in file:
             r = SequenceMatcher(None, y, line)
             rat = r.ratio()
-            if rat > best:
+            if rat >= best:
                 best = rat
                 word = line
                 #print(word)
