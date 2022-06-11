@@ -9,7 +9,7 @@ final = ""
 for y in lis:
     word = ""
     best = 0
-    with open("words_alpha.txt", "r") as file:
+    with open("bet.txt", "r") as file:
         for line in file:
             r = SequenceMatcher(None, y, line)
             rat = r.ratio()
